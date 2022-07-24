@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "./components/Banner/Banner";
 import Nav from "./components/Navigation/Nav";
+import Sobre from "./components/Sobre/Sobre";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -17,7 +18,7 @@ function App() {
       <GlobalStyle/>
       <Nav/>
       <Banner/>
-      
+      <Sobre/>
     </div>
   );
 }
