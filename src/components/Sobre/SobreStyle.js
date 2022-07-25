@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ContainerSobre = styled.div`
   background-color: #17c2a4;
-  height: 45vw;
+  height: 700px;
+  padding-top: 5%;
   text-align: center;
   color: white;
 

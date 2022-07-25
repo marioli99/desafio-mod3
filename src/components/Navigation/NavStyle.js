@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const ContainerNav = styled.div`
   background-color: #9047f5;
+  width: 100%;
+  height: 80px;
+  position: fixed;
 `;
 export const List = styled.ul`
   display: flex;
