@@ -10,7 +10,7 @@ export default function Nav (){
                 <Li>SKILLS</Li>
                 <Li>PROJETOS</Li>
                 <Li>CONTATOS</Li>
-                <Li>SUSTENTABILIDADE</Li>
+                <Li>ONU</Li>
             </List>
         </nav>
         </ContainerNav>

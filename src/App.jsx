@@ -1,9 +1,9 @@
 import React from "react";
-import Banner from "./components/Banner/Banner";
-import Nav from "./components/Navigation/Nav";
-import Sobre from "./components/Sobre/Sobre";
-import Projects from "./components/Projects/Projects";
+import Home from "./components/Home/Home";
 import { createGlobalStyle } from "styled-components";
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
+import * as S from "./components/Navigation/NavStyle";
+import Onu from "./components/Onu/Onu";
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -16,14 +16,25 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   return (
-    <div >
+    <Router >
       <GlobalStyle/>
-      <Nav/>
-      <Banner/>
-      <Sobre/>
-      <Projects/>
-    </div>
-  );
+      <S.ContainerNav>
+        <nav>
+            <S.List>
+            <Link to='/'><S.Li>HOME</S.Li></Link>
+            <S.Li>SKILLS</S.Li>
+            <S.Li>PROJETOS</S.Li>
+            <S.Li>CONTATOS</S.Li>
+            <Link to='/Onu'> <S.Li>ONU</S.Li></Link>
+            </S.List>
+        </nav>
+        </S.ContainerNav>
+    
+      <Routes> 
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Onu' element={<Onu/>}/>
+      </Routes>
+    </Router> );
 }
 
 export default App;

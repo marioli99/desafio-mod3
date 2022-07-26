@@ -1,6 +1,6 @@
 import React from "react";
-import * as S from "./ProjectsStyle";
-import P from "../../asents/img/provisorio.png"
+import * as S from "./StyleProject";
+import P from "../../../asents/img/provisorio.png"
 
 export default function Projects(){
     return (

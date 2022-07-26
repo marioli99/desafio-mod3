@@ -20,4 +20,10 @@ export const Li = styled.li`
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  text-decoration: none;
+
+  :hover {
+    cursor: pointer;
+    text-transform: lowercase;
+  }
 `;
