@@ -14,6 +14,9 @@ export const MyProject = styled.div`
   img {
     width: 35vw;
   }
+  img:hover {
+    transform: scale(1.1);
+  }
 `;
 export const Title = styled.h2`
   padding-top: 5%;
